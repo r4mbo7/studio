@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@400;600&family=Silkscreen&display=swap");
+
+:root {
+  --nuit: #171614;
+  --grille: #222023;
+  --bord: #2c292e;
+  --encre: #202233;
+  --violet: #504580;
+  --prune: #632a6a;
+  --rouille: #be5737;
+  --ambre: #e2a034;
+  --creme: #f3e9d2;
+  --texte: #efe6d2;
+  --doux: #b2a8b8;
+  --cyan: #2fb8e8;
+  --vert: #6cc644;
+  --rose: #e0459b;
+
+  --font-titre: "Archivo", "Arial Narrow", system-ui, sans-serif;
+  --font-pixel: "Silkscreen", "Courier New", monospace;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --bloc: 10px;
+  --fond-grille:
+    linear-gradient(var(--grille) 1px, transparent 1px) 0 0 / var(--bloc) var(--bloc),
+    linear-gradient(90deg, var(--grille) 1px, transparent 1px) 0 0 / var(--bloc) var(--bloc),
+    var(--nuit);
+  --relief: inset 0 3px 0 rgb(255 255 255 / 0.3), inset -3px 0 0 rgb(0 0 0 / 0.22);
+
+  color-scheme: dark;
+}

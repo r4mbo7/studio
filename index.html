@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BrotherCos</title>
+<meta name="description" content="BrotherCos, studio de jeux indépendant de Constantin de la Roche. Des jeux qui s'emboîtent, bloc par bloc.">
+<meta property="og:title" content="BrotherCos">
+<meta property="og:description" content="Des jeux qui s'emboîtent, bloc par bloc.">
+<meta property="og:image" content="https://studio.cdelaroche.fr/assets/ozoboom.jpg">
+<meta name="theme-color" content="#171614">
+<link rel="icon" href="design/logo/brothercos-monogramme.svg" type="image/svg+xml">
+<link rel="stylesheet" href="design/tokens.css">
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fond-grille); color: var(--texte); font: 400 17px/1.6 var(--font-titre); }
+main { max-width: 960px; margin: 0 auto; padding: 72px 20px 48px; display: grid; gap: 88px; }
+a { color: var(--cyan); }
+a:focus-visible { outline: 2px solid var(--ambre); outline-offset: 3px; }
+.lab { font: 400 12px/1 var(--font-pixel); letter-spacing: .08em; text-transform: uppercase; color: var(--ambre); }
+h1, h2 { margin: 0; font-weight: 800; font-stretch: 115%; line-height: 1.1; text-wrap: balance; }
+h2 { font-size: clamp(28px, 4.5vw, 42px); }
+p { margin: 0; max-width: 60ch; }
+.muted { color: var(--doux); }
+
+header { display: grid; gap: 28px; }
+header img { width: 100%; height: auto; display: block; image-rendering: pixelated; }
+h1 { font-size: clamp(24px, 3.6vw, 36px); color: var(--creme); }
+h1 em { font-style: normal; color: var(--ambre); }
+
+.game { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 32px; align-items: center; background: var(--nuit); border: 1px solid var(--bord); padding: 24px; }
+.game img { width: 100%; height: auto; display: block; }
+.game div { display: grid; gap: 14px; align-content: start; }
+.play { justify-self: start; font: 400 13px/1 var(--font-pixel); letter-spacing: .06em; text-transform: uppercase; text-decoration: none; color: var(--nuit); background: var(--ambre); padding: 13px 16px; box-shadow: var(--relief); }
+.play:hover { background: var(--creme); }
+
+.about { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 28px; align-items: start; }
+.about img { width: 120px; height: 120px; display: block; }
+
+footer { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; font-size: 14px; color: var(--doux); border-top: 1px solid var(--bord); padding-top: 20px; }
+
+@media (max-width: 700px) {
+  main { padding-top: 40px; gap: 64px; }
+  .game, .about { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="lab">Studio de jeux indépendant</span>
+    <img src="design/logo/brothercos-logo-transparent.svg" alt="BrotherCos" width="590" height="70">
+    <h1>Des jeux qui s'<em>emboîtent</em>, bloc par bloc.</h1>
+  </header>
+
+  <section class="game" aria-labelledby="ozoboom">
+    <img src="assets/ozoboom.jpg" alt="Une partie d'Ozoboom à quatre joueurs, de nuit, autour du sound system" width="1200" height="750" loading="lazy">
+    <div>
+      <span class="lab">Notre jeu</span>
+      <h2 id="ozoboom">Ozoboom</h2>
+      <p class="muted">Survie coopérative dans un festival de psytrance. De 1 à 4 amis défendent le sound system contre des vagues de bad vibes, du coucher au lever du soleil. Jouable dès maintenant dans le navigateur.</p>
+      <a class="play" href="https://r4mbo7.github.io/Ozoboom/">Jouer</a>
+    </div>
+  </section>
+
+  <section class="about" aria-labelledby="studio">
+    <img src="design/logo/brothercos-monogramme.svg" alt="" width="120" height="120">
+    <div style="display:grid;gap:12px">
+      <span class="lab">Le studio</span>
+      <h2 id="studio">Un studio, une personne</h2>
+      <p class="muted">BrotherCos est le studio de Constantin de la Roche. On fait des jeux courts à lancer, longs à lâcher, à jouer entre amis. Le code d'Ozoboom est ouvert sur <a href="https://github.com/r4mbo7/Ozoboom">GitHub</a>.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 BrotherCos</span>
+    <a href="https://cdelaroche.fr">cdelaroche.fr</a>
+  </footer>
+</main>
+</body>
+</html>
